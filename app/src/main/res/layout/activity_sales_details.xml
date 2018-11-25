@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hhhh7"
+    >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.compubase.mhmd.alosboiya.SalesDetails">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="10dp"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="25sp"
+                    android:textColor="#00b300"
+                    android:id="@+id/d_sales_title"
+                    android:layout_margin="2dp"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="right"
+                    android:id="@+id/d_sales_date"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textColor="#008ae6"
+                    android:layout_margin="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                >
+               <LinearLayout
+                   android:layout_width="100dp"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       android:gravity="bottom"
+                       android:layout_gravity="bottom"
+                       android:id="@+id/d_sales_location"
+                       android:textSize="20sp"
+                       android:textColor="#000"
+                       android:layout_margin="2dp"/>
+                   <ImageView
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:layout_margin="5dp"
+                       android:src="@drawable/location"/>
+               </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/d_saller_name"
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="10dp"
+        android:elevation="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#000"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:id="@+id/d_sales_disc"
+        />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/sharee">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/share_sales"
+                android:src="@drawable/share"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/callcustomer">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="01150552551"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:id="@+id/call_number"
+                android:background="@drawable/callbutton"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/callus"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/myslider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e0e0d1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:text="التعليقات"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/sales_comments_rv">
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="اضف تعليق"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:background="@drawable/bluebutton2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e0e0d1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:text="الأقتراحات"/>
+    </LinearLayout>
+
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:layout_weight="1"
+      app:cardBackgroundColor="#FFFFFF"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      app:cardElevation="3dp"
+      >
+      <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/sug_sales_Rv">
+
+      </android.support.v7.widget.RecyclerView>
+
+
+  </android.support.v7.widget.CardView>
+
+    
+
+
+</LinearLayout>
+</ScrollView>

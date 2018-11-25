@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hhhh7"
+    android:orientation="vertical"
+    tools:context="com.compubase.mhmd.alosboiya.MyAccount">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#469AD2"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="حسابي"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:text="خروج"
+            android:id="@+id/el5orog"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bluebutton2"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="الرصيد"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:textSize="18sp"
+            android:id="@+id/cridet"
+            android:background="@drawable/bluebutton2"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="الاعدادات"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:textSize="18sp"
+            android:id="@+id/settingaccount"
+            android:background="@drawable/bluebutton2"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:text="الصفحة الشخصية"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/myprofile"
+            android:background="@drawable/bluebutton2"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="اعلاناتي"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:id="@+id/announcepage"
+            android:background="@drawable/bluebutton2"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/account_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="#4799D2"
+    android:minHeight="@dimen/abc_action_bar_default_height_material"
+    android:layout_weight="1"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="الأسبوعية"
+            android:id="@+id/tollbartext"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textSize="30sp" />
+
+</android.support.v7.widget.Toolbar>
